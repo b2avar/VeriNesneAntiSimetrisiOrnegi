@@ -1,10 +1,9 @@
 ﻿namespace VeriNesneAntiSimetrisiOrnegi;
 
-public class Dikdortgen
+public class Dikdortgen:Sekil
 {
     private double yukseklik;
     private double genişlik;
-
     public double GetYukseklik()
     {
         return yukseklik;
@@ -23,5 +22,10 @@ public class Dikdortgen
     public void SetGenislik(double genislik)
     {
         this.genişlik = genislik;
+    }
+
+    public override double AlanHesabı()
+    {
+        return yukseklik * genişlik;
     }
 }

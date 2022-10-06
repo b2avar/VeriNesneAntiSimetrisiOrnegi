@@ -1,8 +1,8 @@
 ﻿
 using VeriNesneAntiSimetrisiOrnegi;
 
-Geometri geometriObj = new Geometri();
 double sonuc;
+Geometri geometriObj = new Geometri();
 
 Kare kareObj = new Kare();
 kareObj.SetKenar(4);
