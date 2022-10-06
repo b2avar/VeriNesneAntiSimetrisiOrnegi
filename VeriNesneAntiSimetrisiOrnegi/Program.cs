@@ -2,7 +2,6 @@
 using VeriNesneAntiSimetrisiOrnegi;
 
 double sonuc;
-Geometri geometriObj = new Geometri();
 
 Kare kareObj = new Kare();
 kareObj.SetKenar(4);
@@ -14,13 +13,13 @@ dikdortgenObj.SetGenislik(3);
 Daire daireObj = new Daire();
 daireObj.SetYaricap(2);
 
-sonuc = geometriObj.AlanHesabı(kareObj);
+sonuc = kareObj.AlanHesabı();
 Console.WriteLine("Karenin Alanı : " + sonuc );
 
-sonuc = geometriObj.AlanHesabı(dikdortgenObj);
+sonuc = dikdortgenObj.AlanHesabı();
 Console.WriteLine("Dikdortgenin Alanı : " + sonuc);
 
-sonuc = geometriObj.AlanHesabı(daireObj);
+sonuc = daireObj.AlanHesabı();
 Console.WriteLine("Dairenin Alanı : " + sonuc);
 
 
